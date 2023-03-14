@@ -18,7 +18,10 @@ class AppBarContainer extends StatefulWidget {
 class _AppBarContainerState extends State<AppBarContainer> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
+      color: ColorPalette.backgroundScaffoldColor,
+      height: 150,
+      child: Padding(
       padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,6 +54,6 @@ TextField(
 
         
       ]),
-    );
+    ));
   }
 }

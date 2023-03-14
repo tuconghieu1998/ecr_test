@@ -1,5 +1,6 @@
 import 'package:ecr_test/representation/widgets/app_bar_container_widget.dart';
 import 'package:ecr_test/representation/widgets/list_show_upcoming.dart';
+import 'package:ecr_test/representation/widgets/tab_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -22,8 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
           SingleChildScrollView(
             child: Column(
               children: [
-                 SizedBox(height: 150,),
-                ListShowUpComing()
+                SizedBox(height: 150,),
+                ListShowUpComing(),
+                SizedBox(height: 30,),
+                TabBarHome()
               ],
             ),
           ),

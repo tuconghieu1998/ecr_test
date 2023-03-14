@@ -13,6 +13,17 @@ class TextStyles {
     fontWeight: FontWeight.w400,
     height: 16/14
   );
+
+  static const TextStyle titleStyle = TextStyle(
+    fontSize: 28, color: ColorPalette.textColor, fontWeight: FontWeight.bold
+  );
+
+  static const TextStyle subText = TextStyle(
+    fontSize: 14,
+    color: Colors.grey,
+    fontWeight: FontWeight.w400,
+  );
+
 }
 
 extension ExtendedTextStyle on TextStyle {
